@@ -7,3 +7,4 @@ This is a quiz application built with React and Tailwind CSS. Users can select t
 - Allows topic selection and real-time score calculation.
 - Responsive design with Tailwind CSS
 "## Dev branch updates" 
+"## Updates from the dev branch" 
