@@ -6,3 +6,4 @@ This is a quiz application built with React and Tailwind CSS. Users can select t
 - Fetches questions from the Open Trivia Database API.
 - Allows topic selection and real-time score calculation.
 - Responsive design with Tailwind CSS
+"## Dev branch updates" 
