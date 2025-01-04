@@ -27,9 +27,9 @@ Request Handling: Axios
 Development Tools: Vite (or Create React App), GitHub for version control
 Installation
 Clone this repository:
-bash
-Copier le code
-git clone https://github.com/MeriemNassih/quiz-app
+
+git clone https://github.com/MeriemNassih/quiz-app.git
+
 cd quiz-app
 Install dependencies:
 npm install
