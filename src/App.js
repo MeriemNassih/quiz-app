@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import QuizApp from './components/QuizApp';
+import Home from './pages/Home';
 
-function App() {
+const App = () => {
+  const [quizCriteria, setQuizCriteria] = useState(null);
+
+  const startQuiz = (criteria) => {
+    setQuizCriteria(criteria); // Update quiz criteria
+
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {!quizCriteria ? (
+        <Home startQuiz={startQuiz} />
+      ) : (
+        <QuizApp
+          selectedCategory={quizCriteria.selectedCategory}
+          questionCount={quizCriteria.questionCount}
+          difficulty={quizCriteria.difficulty}
+        />
+      )}
     </div>
   );
-}
+};
 
 export default App;
